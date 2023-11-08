@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 // const  MONGODB_URL  = 'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/?retryWrites=true&w=majority';
 
-const  MONGODB_URL  = 'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/?retryWrites=true&w=majoritymongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/?retryWrites=true&w=majority';
+const  MONGODB_URL  = 'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/?retryWrites=true&w=majority';
 
 
 // connect to database
