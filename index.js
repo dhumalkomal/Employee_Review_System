@@ -1,9 +1,13 @@
+// for environment variables
+require('dotenv').config();
+
 // express
 const express = require('express');
 // creatin app
 const app = express();
 // port
-const PORT= 8000;
+const PORT= process.env.ERS_PORT;
+
 // connect to database
 require('./config/mongoose').connect();
 
@@ -61,7 +65,7 @@ app.use(session({
     },
     // store the session in database
     store: MongoStore.create({
-      mongoUrl:'mongodb://127.0.0.1:27017/ERS_db'
+      mongoUrl:process.env.MONGODB_URL
     })
   }));
   
