@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 // mongoDB url stored in env variable
 // const  MONGODB_URL  = 'mongodb://127.0.0.1:27017/ERS_db';
-// const  MONGODB_URL  = '';
+const  MONGODB_URL  = 'mongodb+srv://soumyasri2245:Soumya22%4034@cluster0.u2ywt3o.mongodb.net/?retryWrites=true&w=majority';
 
 
 // const  MONGODB_URL  = 'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/?retryWrites=true&w=majority';
@@ -14,7 +14,7 @@ const mongoose = require('mongoose');
 
 // connect to database
 exports.connect = () => {
-    mongoose.connect(process.env.MONGODB_URL, {
+    mongoose.connect(MONGODB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })

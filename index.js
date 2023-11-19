@@ -6,7 +6,7 @@ const express = require('express');
 // creatin app
 const app = express();
 // port
-const PORT= process.env.ERS_PORT;
+const PORT= 5000;
 
 // connect to database
 require('./config/mongoose').connect();
@@ -65,7 +65,7 @@ app.use(session({
     },
     // store the session in database
     store: MongoStore.create({
-      mongoUrl:process.env.MONGODB_URL
+      mongoUrl:'mongodb+srv://soumyasri2245:Soumya22%4034@cluster0.u2ywt3o.mongodb.net/?retryWrites=true&w=majority'
     })
   }));
   
