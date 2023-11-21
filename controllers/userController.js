@@ -23,7 +23,7 @@ module.exports.home = (req,res) => {
 
     // if user is not logged in 
     // render the sign in page
-    return res.render('signIn',{
+    return res.render('signin',{
         title: "Sign In"
     })
 }
@@ -48,7 +48,7 @@ module.exports.signUp = (req,res) => {
 
     // if not logged in
     // render the sign up page
-    return res.render('signUp',{
+    return res.render('signup',{
         title: "Sign Up"
     })
 }
