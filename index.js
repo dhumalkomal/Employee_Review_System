@@ -60,7 +60,7 @@ app.use(session({
     },
     // store the session in database
     store: MongoStore.create({
-      mongoUrl:'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/EmployeeReviewSystem?retryWrites=true&w=majority'
+      mongoUrl:'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/habits-tracker?retryWrites=true&w=majority'
     })
   }));
   
