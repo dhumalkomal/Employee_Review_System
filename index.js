@@ -1,12 +1,9 @@
 // for environment variables
 require('dotenv').config();
-
 // express
 const express = require('express');
-// creatin app
-const app = express();
-// port
-const PORT= 5000;
+const app = express(); // creatin app
+const PORT= 5000; // port
 
 // connect to database
 require('./config/mongoose').connect();
@@ -38,10 +35,8 @@ app.use(express.urlencoded({
 
 // for static files folder
 app.use(express.static('assets'));
-
 // for parsing the cookies
 app.use(cookieParser());
-
 // using layouts
 app.use(expressLayouts);
 
@@ -65,7 +60,7 @@ app.use(session({
     },
     // store the session in database
     store: MongoStore.create({
-      mongoUrl:'mongodb+srv://soumyasri2245:Soumya22%4034@cluster0.u2ywt3o.mongodb.net/?retryWrites=true&w=majority'
+      mongoUrl:'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/EmployeeReviewSystem?retryWrites=true&w=majority'
     })
   }));
   
@@ -77,7 +72,6 @@ app.use(myMware.setFlash);
 app.use(passport.initialize());
 // passport sessions
 app.use(passport.session());
-
 // store the logged in user's data in locals variable
 app.use(passport.setAuthenticatedUser);
 

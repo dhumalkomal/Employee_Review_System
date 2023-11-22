@@ -2,14 +2,12 @@
 // import mongoose
 const mongoose = require('mongoose');
 
-// mongoDB url stored in env variable
+// mongoDB url 
 // const  MONGODB_URL  = 'mongodb://127.0.0.1:27017/ERS_db';
-// const  MONGODB_URL  = 'mongodb+srv://kunaldeepers:ManCc4IC9t1a5bNO@cluster2.ozsiaoz.mongodb.net/?retryWrites=true&w=majority';
 
 
-// const  MONGODB_URL  = 'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/EmployeeReviewSystem?retryWrites=true&w=majority';
+const  MONGODB_URL  = 'mongodb+srv://komaldhumal:EmployeeSystem@komalcluster.lythlnz.mongodb.net/EmployeeReviewSystem?retryWrites=true&w=majority';
 
-const  MONGODB_URL  = 'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/?retryWrites=true&w=majority';
 
 
 // connect to database
