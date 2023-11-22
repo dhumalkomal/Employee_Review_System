@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 // const  MONGODB_URL  = 'mongodb://127.0.0.1:27017/ERS_db';
 
 
-const  MONGODB_URL  = 'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/?retryWrites=true&w=majority';
+const  MONGODB_URL  = 'mongodb+srv://habit:habit123@cluster0.krqzlcy.mongodb.net/habits-tracker?retryWrites=true&w=majority';
 
 
 
