@@ -3,7 +3,8 @@ An application that allows employees to submit feedback toward each other’s pe
 
 # Install
 To install all the dependences of the project, run the following command:
-npm install
+
+npm install, 
 npm start
 
 # Source Code:
